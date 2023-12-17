@@ -1,5 +1,4 @@
 const express = require('express');
-const cors = require('cors');
 const userRouter = require('./src/handler/user-handler');
 const formInputHandlerRouter = require('./src/handler/formInput-handler');
 const dashboard = require('./src/handler/data-handler');
@@ -20,7 +19,6 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(cors());
 
 app.use('/api/auth', registerRouter);
 app.use('/api/auth', loginRouter);
