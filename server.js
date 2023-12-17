@@ -1,5 +1,4 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const cors = require('cors');
 const userRouter = require('./src/handler/user-handler');
 const formInputHandlerRouter = require('./src/handler/formInput-handler');
@@ -12,7 +11,9 @@ const loginRouter = require('./src/handler/login-handler');
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.use(bodyParser.json());
+app.use(express.json());
+
+app.use(express.urlencoded({ extended: true }));
 
 app.use((req, res, next) => {
   res.setHeader('Content-Type', 'application/json');
