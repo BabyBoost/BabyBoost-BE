@@ -10,9 +10,14 @@ const registerRouter = require('./src/handler/register-handler');
 const loginRouter = require('./src/handler/login-handler');
 
 const app = express();
-const port = process.env.PORT || 80;
+const port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
+
+app.use((req, res, next) => {
+  res.setHeader('Content-Type', 'application/json');
+  next();
+});
 
 app.use(cors());
 
