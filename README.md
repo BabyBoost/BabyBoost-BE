@@ -18,13 +18,13 @@ To run **BabyBoost** loaclly, run this command on your git bash:
 Linux and macOS:
 
 ```bash
-sudo git clone https://github.com/warizmy/BabyBoost-BE.git
+sudo git clone https://github.com/BabyBoost/BabyBoost-BE.git
 ```
 
 Windows :
 
 ```bash
-git clone https://github.com/warizmy/BabyBoost-BE.git
+git clone https://github.com/BabyBoost/BabyBoost-BE.git
 ```
 
 - #### Create and setup `.env` file in the root folder
