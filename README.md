@@ -9,7 +9,7 @@
 ## What I'm use here?
 
 - [Express Js](https://expressjs.com/) as Framework.
-- [Supabase](https://supabase.com/) as Databse
+- [Supabase](https://supabase.com/) as Database
 
 # Configuration
 
